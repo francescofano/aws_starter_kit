@@ -1,5 +1,4 @@
 import { Link, useLocation } from 'react-router-dom'
-import { useStore } from '../store/useStore'
 import ThemeToggle from './ThemeToggle'
 
 export default function Navigation() {
