@@ -51,52 +51,52 @@ A modern, production-ready portfolio website starter kit built with React, TypeS
 ### Installation
 
 1. Clone the repository:
-\`\`\`bash
+```bash
 git clone https://github.com/yourusername/aws-portfolio-starter
 cd aws-portfolio-starter
-\`\`\`
+```
 
 2. Install frontend dependencies:
-\`\`\`bash
+```bash
 cd frontend
 npm install
-\`\`\`
+```
 
 3. Install backend dependencies:
-\`\`\`bash
+```bash
 cd backend
 npm install
-\`\`\`
+```
 
 ### Local Development
 
 1. Start the frontend development server:
-\`\`\`bash
+```bash
 cd frontend
 npm run dev
-\`\`\`
+```
 
 2. Build the frontend for production:
-\`\`\`bash
+```bash
 cd frontend
 npm run build
-\`\`\`
+```
 
 ### Deployment
 
-1. Configure your environment variables in \`backend/.env\`:
-\`\`\`env
+1. Configure your environment variables in `backend/.env`:
+```env
 STACK_NAME=PortfolioStack
 FRONTEND_PATH=../frontend/dist
 DOMAIN_NAME=yourdomain.com       # Optional
 HOSTED_ZONE_ID=ZXXXXXXXXXXXXX    # Optional
-\`\`\`
+```
 
 2. Deploy the infrastructure:
-\`\`\`bash
+```bash
 cd backend
 cdk deploy
-\`\`\`
+```
 
 ## Configuration
 
@@ -104,22 +104,26 @@ cdk deploy
 
 1. Register a domain in AWS Route53 or use an existing domain
 2. Note your Hosted Zone ID
-3. Add domain configuration to \`backend/.env\`
+3. Add domain configuration to `backend/.env`
 4. Deploy the stack
 
 ### Frontend Configuration
 
 The frontend uses Vite for building and development. Configuration can be modified in:
-- \`vite.config.ts\` - Build and development settings
-- \`tailwind.config.js\` - Tailwind CSS customization
-- \`tsconfig.json\` - TypeScript configuration
+- `vite.config.ts` - Build and development settings
+- `tailwind.config.js` - Tailwind CSS customization
+- `tsconfig.json` - TypeScript configuration
 
 ### Infrastructure Configuration
 
 Infrastructure settings can be modified in:
-- \`backend/lib/backend-stack.ts\` - Main stack configuration
-- \`backend/lib/constructs/\` - Individual AWS resource configurations
+- `backend/lib/backend-stack.ts` - Main stack configuration
+- `backend/lib/constructs/` - Individual AWS resource configurations
 
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
